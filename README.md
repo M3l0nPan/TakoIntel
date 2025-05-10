@@ -49,6 +49,10 @@ Build extension (Firefox) :
 npm run build:firefox
 ``` 
 
+## Similar projects
+
+- [Mitaka](https://github.com/ninoseki/mitaka)
+- [SOC Multitool](https://github.com/zdhenard42/SOC-Multitool)
 
 ## License
 
