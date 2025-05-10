@@ -1,0 +1,13 @@
+{
+    "category": "ViewDNS",
+    "description": "Takes a domain or IP address and does a reverse lookup to quickly shows all other domains hosted from the same server.",
+    "enabled": false,
+    "name": "ViewDNS Reverse IP/Domain",
+    "pap": "red",
+    "regexPatterns": [
+        "(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]"
+    ],
+    "urls": [
+        "https://viewdns.info/reverseip/?host={SELECTION_TEXT_AREA}&t=1"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "category": "ViewDNS",
+    "description": "Shows a historical list of IP addresses a given domain name has been hosted on as well as where that IP address is geographically located, and the owner of that IP address.",
+    "enabled": false,
+    "name": "ViewDNS IP History",
+    "pap": "red",
+    "regexPatterns": [
+        "(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]"    
+    ],
+    "urls": [
+        "https://viewdns.info/iphistory/?domain={SELECTION_TEXT_AREA}"
+    ]
+}

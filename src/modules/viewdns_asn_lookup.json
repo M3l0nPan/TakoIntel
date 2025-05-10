@@ -1,0 +1,13 @@
+{
+    "category": "ViewDNS",
+    "description": "Use this tool to determine which company owns the specified Autonomous System Number (ASN).",
+    "enabled": false,
+    "name": "ViewDNS ASN Lookup",
+    "pap": "red",
+    "regexPatterns": [
+        "^(?:\\d{1,5}|[1-9]\\d{0,9})$"    
+    ],
+    "urls": [
+        "https://viewdns.info/asnlookup/?asn={SELECTION_TEXT_AREA}"
+    ]
+}

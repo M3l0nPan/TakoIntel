@@ -1,0 +1,13 @@
+{
+    "category": "DLL",
+    "description": "Query Hijacklibs to lookup DLL or executable. Regex on DLL and executable patterns.",
+    "enabled": false,
+    "name": "HijackLibs Lookup",
+    "pap": "red",
+    "regexPatterns": [
+        "\\.dll$|\\.exe$"
+    ],
+    "urls": [
+        "https://hijacklibs.net/#{SELECTION_TEXT_AREA}"
+    ]
+}

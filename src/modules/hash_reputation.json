@@ -1,0 +1,13 @@
+{
+    "category": "Hash",
+    "description": "Query VirusTotal.",
+    "enabled": true,
+    "name": "Hash Reputation",
+    "pap": "red",
+    "regexPatterns": [
+        "^([a-fA-F0-9]{32}|[a-fA-F0-9]{40}|[a-fA-F0-9]{64})$"
+    ],
+    "urls": [
+        "https://www.virustotal.com/gui/search/{SELECTION_TEXT_AREA}"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "category": "CVE",
+    "description": "Query NVD base for CVE details",
+    "enabled": false,
+    "name": "CVE Lookup",
+    "pap": "red",
+    "regexPatterns": [
+        "^CVE-\\d{4}-\\d{4,7}$"
+    ],
+    "urls": [
+        "https://nvd.nist.gov/vuln/detail/{SELECTION_TEXT_AREA}"
+    ]
+}

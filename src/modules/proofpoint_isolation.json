@@ -1,0 +1,13 @@
+{
+    "category": "Proofpoint",
+    "description": "Open URL in Proofpoint isolation",
+    "enabled": false,
+    "name": "Proofpoint Isolation",
+    "pap": "red",
+    "regexPatterns": [
+        "^(https?:\\/\\/)?([\\w-]+\\.)+[\\w-]{2,}(\\/[\\w-.~:?#[\\]@!$&'()*+,;=]*)*\/?$"
+    ],
+    "urls": [
+        "https://saasisolation.com/browser?traceToken=dash-create-url&url={SELECTION_TEXT_AREA}"
+    ]
+}

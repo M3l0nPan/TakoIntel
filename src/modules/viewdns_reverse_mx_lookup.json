@@ -1,0 +1,13 @@
+{
+    "category": "ViewDNS",
+    "description": "Takes a mail server and quickly shows all other domains that use the same mail server.",
+    "enabled": false,
+    "name": "ViewDNS Reverse MX Lookup",
+    "pap": "red",
+    "regexPatterns": [
+        "(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]"    
+    ],
+    "urls": [
+        "https://viewdns.info/reversemx/?mx={SELECTION_TEXT_AREA}"
+    ]
+}

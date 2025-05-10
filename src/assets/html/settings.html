@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/settings.css">
+  <title>Extension Settings</title>
+</head>
+
+<body>
+  <!-- Title Block -->
+  <header class="title-block">
+    <div class="title-text">TakoIntel</div>
+    <img class="title-logo" src="../images/takointel.png" alt="Extension Logo">
+  </header>
+
+  <!-- No script test -->
+  <noscript>
+    <p class="noscript-warning">This settings page requires JavaScript to function properly. Please enable JavaScript in
+      your browser.</p>
+  </noscript>
+
+  <!-- Module Settings block -->
+  <div class="module-settings-header">
+    <h2 class="section-title">Module Settings</h2>
+    <input type="text" id="module-search" placeholder="Search in modules" />
+  </div>
+  <div id="module-settings-container" aria-labelledby="page-title" role="region"></div>
+
+  <!-- Privacy Block -->
+  <h2 class="section-title">Privacy Settings</h2>
+  <div id="settings-container" aria-labelledby="settings-title" role="region">
+    <!-- Allow Local IP on PAP Red -->
+    <div class="setting-block">
+      <label for="allow-local-ip-pap-red" class="setting-label">Allow local network IP on PAP red</label>
+      <label class="switch">
+        <input type="checkbox" id="allow-local-ip-pap-red" />
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <!-- Excluded Regex List -->
+    <div class="setting-block">
+      <label for="excluded-regex-pap-red" class="setting-label">Excluded regex on PAP red modules:</label>
+      <textarea id="excluded-regex-pap-red" rows="4"
+        placeholder="Enter excluded regex patterns, one per line."></textarea>
+    </div>
+  </div>
+
+  <!-- Troubleshooting Block -->
+  <h2 class="section-title">Troubleshooting Settings</h2>
+  <div id="settings-container" aria-labelledby="settings-title" role="region">
+    <!-- Enable Debug Mode -->
+    <div class="setting-block">
+      <label for="enable-debug-mode" class="setting-label">Enable debug mode</label>
+      <label class="switch">
+        <input type="checkbox" id="enable-debug-mode" />
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+
+  <script type="module" src="../../scripts/settings.js"></script>
+
+</body>
+
+</html>

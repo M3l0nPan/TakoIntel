@@ -1,0 +1,13 @@
+{
+    "category": "CIRCL",
+    "description": "Check URL in PhishTank database using CIRCL API endpoint",
+    "enabled": false,
+    "name": "CIRCL PhishTank Lookup",
+    "pap": "red",
+    "regexPatterns": [
+        "^(https?:\\/\\/)?([\\w-]+\\.)+[\\w-]{2,}(\\/[\\w-.~:?#[\\]@!$&'()*+,;=]*)*\/?$"
+    ],
+    "urls": [
+        "https://phishtankapi.circl.lu/checkurl?url={SELECTION_TEXT_AREA}"
+    ]
+}

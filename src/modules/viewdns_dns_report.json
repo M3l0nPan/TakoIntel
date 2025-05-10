@@ -1,0 +1,13 @@
+{
+    "category": "ViewDNS",
+    "description": "View a complete report on the DNS settings for a domain.",
+    "enabled": false,
+    "name": "ViewDNS DNS Report",
+    "pap": "red",
+    "regexPatterns": [
+        "(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]"    
+    ],
+    "urls": [
+        "https://viewdns.info/dnsreport/?domain={SELECTION_TEXT_AREA}"
+    ]
+}

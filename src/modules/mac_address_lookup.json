@@ -1,0 +1,13 @@
+{
+    "category": "MAC Address",
+    "description": "Check MAC Address against a vendor base.",
+    "enabled": false,
+    "name": "MAC Address Lookup",
+    "pap": "red",
+    "regexPatterns": [
+        "^([0-9A-Fa-f]{2}([:-])?){5}[0-9A-Fa-f]{2}$"
+    ],
+    "urls": [
+        "https://api.macvendors.com/{SELECTION_TEXT_AREA}"
+    ]
+}

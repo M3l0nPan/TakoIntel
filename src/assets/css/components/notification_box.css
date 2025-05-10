@@ -1,0 +1,92 @@
+.notification-box-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* The alert box container */
+.notification-box {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 70%;
+  max-height: 70%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  word-wrap: break-word;
+  overflow-y: auto;
+  font-family: Arial, sans-serif;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Title of the alert */
+.notification-box h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Error message list */
+.notification-box ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Close button */
+.notification-box-button {
+  margin-top: 15px;
+  background-color:#0077be;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.notification-box-button:hover {
+  background-color:#006f9c;
+}
+
+.notification-box-confirm-button {
+  background:#0077be;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.notification-box-confirm-button:hover {
+  background:#006f9c;
+}
+
+.notification-box-cancel-button {
+  background: #ccc;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.notification-box-cancel-button:hover {
+  background: #999;
+}

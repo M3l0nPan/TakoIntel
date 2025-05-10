@@ -1,0 +1,14 @@
+{
+    "category": "Domain",
+    "description": "Query URLScan and VirusTotal.",
+    "enabled": true,
+    "name": "Domain Reputation",
+    "pap": "red",
+    "regexPatterns": [
+        "(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]"
+    ],
+    "urls": [
+        "https://www.virustotal.com/gui/search/{SELECTION_TEXT_AREA}", 
+        "https://urlscan.io/search/#{SELECTION_TEXT_AREA}"
+    ]
+}

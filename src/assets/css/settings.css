@@ -1,0 +1,78 @@
+@import url("components/add_module_button.css");
+@import url('components/module_box.css');
+@import url("components/notification_box.css");
+@import url("components/save_button.css");
+@import url("components/status_message.css");
+@import url("components/title.css");
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.section-title {
+  text-align: left;
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#module-settings-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.module-settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#module-search {
+  padding: 8px 12px;
+  margin-top: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.message-container {
+  margin-bottom: 20px;
+}
+
+#settings-container {
+  margin-bottom: 5px;
+}
+
+.setting-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.setting-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.setting-block textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  box-sizing: border-box;
+}

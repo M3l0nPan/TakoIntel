@@ -1,0 +1,13 @@
+{
+    "category": "ViewDNS",
+    "description": "This tool will display the name of the company that manufactured a specific network device based on its MAC Address.",
+    "enabled": false,
+    "name": "ViewDNS MAC Address Lookup",
+    "pap": "red",
+    "regexPatterns": [
+        "^([0-9A-Fa-f]{2}([:-])?){5}[0-9A-Fa-f]{2}$"
+    ],
+    "urls": [
+        "https://viewdns.info/maclookup/?mac={SELECTION_TEXT_AREA}"
+    ]
+}

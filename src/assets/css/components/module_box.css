@@ -1,0 +1,170 @@
+/* Module Box */
+.module-box {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Module Info */
+.module-info {
+    flex: 1;
+    margin-right: 40px;
+    margin-bottom: 30px;
+    max-width: 100%;
+}
+
+/* Module Name */
+.module-info h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Module Category */
+.module-info-category {
+    font-size: 12px;
+    color: grey;
+    margin-top: 0px;
+}
+
+/* Module Description */
+.module-info-description {
+    padding: 10px 0px;
+    color: #333;
+    font-size: 14px;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+.module-info-description::before {
+    content: "Description: ";
+    font-weight: bold;
+    color: #333;
+}
+
+/* Module Info Details (Regex Patterns, URLs, PAP Value) */
+.module-info-detail {
+    margin-top: 5px;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Code Block (for Regex Patterns and URLs) */
+.module-info-detail pre {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    overflow-x: auto;
+    max-width: 100%;
+
+}
+
+/* PAP Badge (Modern Red/Green) */
+.pap-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.pap-badge.good {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.pap-badge.bad {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Toggle Container (Slider) */
+.toggle-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    border-radius: 50px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+input:checked+.slider {
+    background-color: #4CAF50;
+}
+
+input:checked+.slider:before {
+    transform: translateX(14px);
+}
+
+.delete-button {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #d9534f;
+}
+
+.delete-button:hover {
+    color: #c9302c;
+}
+
+.edit-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #007bff;
+}
+
+.edit-button:hover {
+    color: #0056b3;
+}

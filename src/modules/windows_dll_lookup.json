@@ -1,0 +1,13 @@
+{
+    "category": "DLL",
+    "description": "Query NirSoft DLL database.",
+    "enabled": false,
+    "name": "DLL Lookup",
+    "pap": "red",
+    "regexPatterns": [
+        "\\.dll$|\\.exe$"
+    ],
+    "urls": [
+        "https://windows10dll.nirsoft.net/{SELECTION_TEXT_AREA}.html"
+    ]
+}

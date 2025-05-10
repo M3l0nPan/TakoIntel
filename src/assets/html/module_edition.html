@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/module_edition.css">
+  <title>Module Edition</title>
+</head>
+
+<body>
+  <!-- Title Block -->
+  <header class="title-block">
+    <div class="title-text">TakoIntel</div>
+    <img class="title-logo" src="../images/takointel.png" alt="Extension Logo">
+  </header>
+
+  <div class="container">
+    <h1>Edit Module Details</h1>
+    <form id="module-edit-form">
+      <label for="module-name">Module Name</label>
+      <textarea id="module-name"></textarea>
+
+      <label for="module-category">Category</label>
+      <textarea id="module-category"></textarea>
+
+      <label for="module-description">Description</label>
+      <textarea id="module-description"></textarea>
+
+      <label for="module-regex">Regex Patterns</label>
+      <small class="label-description">Enter one regex per line.</small>
+      <textarea id="module-regex"></textarea>
+
+      <label for="module-urls">URLs</label>
+      <small class="label-description">Enter one URL per line. Use {SELECTION_TEXT_AREA} to insert the selected text.</small>
+      <textarea id="module-urls"></textarea>
+
+      <label for="module-pap">PAP</label>
+      <select id="module-pap">
+        <option value="green">green</option>
+        <option value="red">red</option>
+      </select>
+
+      <div>
+        <button type="button" class="back-button">Back to Settings</button>
+        <button type="button" class="apply-changes">Apply</button>
+      </div>
+    </form>
+  </div>
+
+  <script type="module" src="../../scripts/module_edition.js"></script>
+</body>
+
+</html>

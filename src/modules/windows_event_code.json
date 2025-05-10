@@ -1,0 +1,13 @@
+{
+    "category": "Windows",
+    "description": "Query Microsoft Documentation",
+    "enabled": false,
+    "name": "Windows Event Code",
+    "pap": "red",
+    "regexPatterns": [
+        "^[0-9]{4}$"
+    ],
+    "urls": [
+        "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-{SELECTION_TEXT_AREA}"
+    ]
+}

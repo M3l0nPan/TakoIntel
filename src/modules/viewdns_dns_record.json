@@ -1,0 +1,13 @@
+{
+    "category": "ViewDNS",
+    "description": "View all configured DNS records (A, MX, CNAME etc.) for a specified domain name.",
+    "enabled": false,
+    "name": "ViewDNS DNS Record",
+    "pap": "red",
+    "regexPatterns": [
+        "(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]"    
+    ],
+    "urls": [
+        "https://viewdns.info/dnsrecord/?domain={SELECTION_TEXT_AREA}"
+    ]
+}
